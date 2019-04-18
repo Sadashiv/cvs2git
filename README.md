@@ -65,6 +65,10 @@ converting a CVS repository over to git, a more modern, more powerful SCM.
    unzip -r reoname.zip
    cvs2git --blobfile=/git/git-blob.dat --dumpfile=/git/git-dump.dat --username=Sadashiv
    --fallback-encoding=ascii reponame >> /tmp/cvs_migration/reponame.log
+   
+   blobfile: A Git blob (binary large object) is the object type used to store the contents of each file in a
+   repository.   The file's SHA-1 hash is computed and stored in the blob object. These endpoints allow you
+   to read and write blob objects to your Git database on GitHub.
 
    NOTICE:
    This step could take several hours depending on both the size of the repository and the number of commits.
